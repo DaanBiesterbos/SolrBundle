@@ -4,8 +4,11 @@ SolrBundle
 [![Latest Stable Version](https://poser.pugx.org/floriansemm/solr-bundle/v/stable.svg)](https://packagist.org/packages/floriansemm/solr-bundle)
 [![Total Downloads](https://poser.pugx.org/floriansemm/solr-bundle/downloads.svg)](https://packagist.org/packages/floriansemm/solr-bundle)
 
+
 Introduction
 ------------
+
+**This is a FORK from https://github.com/floriansemm/SolrBundle. The original bundle seems to abandoned. I forked the bundle to solve a pretty bad performance issue. Feel free to use this bundle or use the original bundle instead.**
 
 This Bundle provides a simple API to index and query a Solr Index. 
 
