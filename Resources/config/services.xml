@@ -50,7 +50,10 @@
             <argument type="service" id="solr.doctrine.annotation.annotation_reader" />
         </service>
 
-        <service id="solr.doctrine.classnameresolver.known_entity_namespaces" class="FS\SolrBundle\Doctrine\ClassnameResolver\KnownNamespaceAliases" public="true"/>
+        <service id="solr.doctrine.classnameresolver.known_entity_namespaces" class="FS\SolrBundle\Doctrine\ClassnameResolver\KnownNamespaceAliases" public="true">
+            <argument type="service" id="logger" />
+            <argument type="string">%kernel.cache_dir%</argument>
+        </service>
 
         <service id="solr.doctrine.classnameresolver" class="FS\SolrBundle\Doctrine\ClassnameResolver\ClassnameResolver" public="false">
             <argument type="service" id="solr.doctrine.classnameresolver.known_entity_namespaces"/>
